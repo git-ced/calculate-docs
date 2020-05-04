@@ -13,10 +13,10 @@ const siteConfig = {
   projectName: 'calculate',
   organizationName: 'git-ced',
   headerLinks: [ // TODO Add real links
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    { doc: 'guides', label: 'Docs' },
+    { page: 'help', label: 'Use Cases' },
+    { page: 'help', label: 'Help' },
+    { blog: true, label: 'Blog' },
   ],
   users,
   headerIcon: 'img/calculate-logo-light.svg',
@@ -37,11 +37,10 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
-  docsSideNavCollapsible: false,
+  docsSideNavCollapsible: true,
   enableUpdateBy: true,
   enableUpdateTime: true,
   repoUrl: 'https://github.com/git-ced/calculate',
-  scrollToTop: true,
 };
 
 module.exports = siteConfig;
