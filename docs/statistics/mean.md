@@ -1,7 +1,7 @@
 ---
-id: guides
-title: Latin-ish
-sidebar_label: Guides
+id: mean
+title: Mean
+sidebar_label: Mean
 ---
 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.

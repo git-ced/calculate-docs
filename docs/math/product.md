@@ -1,7 +1,7 @@
 ---
-id: installation
-title: Latin-ish
-sidebar_label: Installation
+id: product
+title: Product
+sidebar_label: Product
 ---
 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.

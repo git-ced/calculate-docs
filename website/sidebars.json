@@ -1,16 +1,28 @@
 {
   "docs": {
     "Getting Started": [
-      "installation"
+      "getting-started/installation"
     ],
     "Math": [
-      "guides"
+      "math/sum",
+      "math/difference",
+      "math/product",
+      "math/quotient",
+      "math/remainder",
+      "math/power",
+      "math/square",
+      "math/cube"
     ],
     "Statistics": [
-      "guides"
+      "statistics/mean",
+      "statistics/median",
+      "statistics/mode",
+      "statistics/range"
     ],
     "Sorting": [
-      "guides"
+      "sorting/sort",
+      "sorting/insertion-sort",
+      "sorting/quicksort"
     ]
   }
 }
