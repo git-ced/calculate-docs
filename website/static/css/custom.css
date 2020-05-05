@@ -1,9 +1,21 @@
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .mainContainer .wrapper .post .postHeaderTitle {
+    padding-top: 8px;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .fixedHeaderContainer {
     display: flex;
     justify-content: center;
+  }
+
+  .navPusher {
+    padding-top: 116px;
+  }
+
+  .mainContainer .wrapper .post .postHeaderTitle {
+    padding-top: 32px;
   }
 }
 @media only screen and (min-width: 1400px) {}
