@@ -42,7 +42,7 @@ Basic usage with two given numbers.
 const result = sum(12,24);
 ```
 
-> `result` would be 36
+> `result` would be **36**
 
 Adding multiple given nnumbers.
 
@@ -50,7 +50,7 @@ Adding multiple given nnumbers.
 const result = sum(12,24,36,48,60,72,84,96,108,120,132);
 ```
 
-> `result` would be 792
+> `result` would be **792**
 
 If you're using an array, you can use the spread operator like this
 
@@ -58,4 +58,4 @@ If you're using an array, you can use the spread operator like this
 const result = sum(...[12,24,36,48,60,72,84,96,108,120,132]);
 ```
 
-> `result` would be 792
+> `result` would be **792**
