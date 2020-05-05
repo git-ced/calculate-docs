@@ -14,7 +14,6 @@ const siteConfig = {
   organizationName: 'git-ced',
   headerLinks: [ // TODO Add real links
     { doc: 'getting-started/installation', label: 'Docs' },
-    { page: 'help', label: 'Use Cases' },
     { page: 'help', label: 'Help' },
     { blog: true, label: 'Blog' },
   ],

@@ -12,26 +12,18 @@ const CompLibrary = require('../../core/CompLibrary.js');
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-function Help(props) {
-  const {config: siteConfig, language = ''} = props;
-  const {baseUrl, docsUrl} = siteConfig;
-  const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-  const langPart = `${language ? `${language}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
-
+function Help() {
   const supportLinks = [
     {
-      content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
-      )})`,
+      content: `Learn more using the [documentation on this site.](/docs/installation)`,
       title: 'Browse Docs',
     },
     {
-      content: 'Ask questions about the documentation and project',
+      content: '[Ask questions](https://github.com/git-ced/calculate/issues) about the documentation and project.',
       title: 'Join the community',
     },
     {
-      content: "Find out what's new with this project",
+      content: "Find out [what's new](https://github.com/git-ced/calculate/releases) with this project",
       title: 'Stay up to date',
     },
   ];
@@ -43,7 +35,11 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p>
+            This project is maintained by
+            <a href="https://github.com/git-ced" style={{color: '#000'}}> Prince Neil Cedrick Castro</a>
+            .
+          </p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
