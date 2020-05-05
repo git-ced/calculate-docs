@@ -40,11 +40,19 @@ class Footer extends React.Component {
             <a href="/docs/getting-started/installation">
               Getting Started
             </a>
+            <a href="/docs/math/sum">
+              Guides
+            </a>
           </div>
           <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href={this.props.config.repoUrl}>GitHub</a>
+            <h5>Package</h5>
+            <a href="https://www.npmjs.com/package/@princedev/calculate">NPM</a>
+            <a
+              style={{ marginBottom: '8px' }}
+              href={this.props.config.repoUrl}
+            >
+              GitHub
+            </a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -55,6 +63,11 @@ class Footer extends React.Component {
               aria-label="Star this project on GitHub">
               Star
             </a>
+          </div>
+          <div>
+            <h5>More</h5>
+            <a href={`${this.props.config.baseUrl}help`}>Help</a>
+            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             {this.props.config.twitterUsername && (
               <div className="social">
                 <a
@@ -79,6 +92,7 @@ class Footer extends React.Component {
             )}
           </div>
         </section>
+        <section className="copyright">aws.cedi@gmail.com</section>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
