@@ -67,6 +67,7 @@ class Index extends React.Component {
   render() {
     const {config: siteConfig} = this.props;
 
+    // ANCHOR Features Section
     const Features = () => (
       <Block layout="fourColumn" align="center">
         {[
@@ -86,6 +87,7 @@ class Index extends React.Component {
       </Block>
     );
 
+    // ANCHOR Tree Shake Section
     const TreeShake = () => (
       <Block background="highlight" align="left">
         {[
@@ -100,6 +102,7 @@ class Index extends React.Component {
       </Block>
     );
 
+    // ANCHOR Module Format Section
     const ModuleFormat = () => (
       <Block background="light" align="left">
         {[
