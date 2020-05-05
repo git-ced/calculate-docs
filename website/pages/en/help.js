@@ -15,7 +15,7 @@ const GridBlock = CompLibrary.GridBlock;
 function Help() {
   const supportLinks = [
     {
-      content: `Learn more using the [documentation on this site.](/docs/installation)`,
+      content: `Learn more using the [documentation on this site.](/calculate-docs/docs/installation)`,
       title: 'Browse Docs',
     },
     {
