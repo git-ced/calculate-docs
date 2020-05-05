@@ -30,7 +30,7 @@ import { cube } from '@princedev/calculate';
 
 ## Examples
 
-Basic usage with two given numbers.
+Basic usage with a given number.
 
 ```javascript
 const result = cube(2);
