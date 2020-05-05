@@ -11,14 +11,14 @@
 /* ANCHOR Navbar **************************************************************/
 
 .fixedHeaderContainer a {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .navigationSlider .slidingNav ul {
   background-color: rgb(13, 8, 32);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 /* ANCHOR Landing Screen  *****************************************************/
