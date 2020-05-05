@@ -7,7 +7,7 @@ const users = [];
 
 const siteConfig = {
   title: 'Calculate',
-  tagline: 'Fast, lightweight, extensibe.',
+  tagline: 'Fast, lightweight, extensible.',
   url: '#', // TODO Add real url
   baseUrl: '/',
   projectName: 'calculate',
