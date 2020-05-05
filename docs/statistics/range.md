@@ -36,7 +36,7 @@ import { range } from '@princedev/calculate';
 
 ## Examples
 
-Basic usage with even length of numbers.
+Basic usage with given numbers.
 
 ```javascript
 const result = range(21, 4, 8, 6);
