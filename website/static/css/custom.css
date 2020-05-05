@@ -28,7 +28,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48vh;
+  height: 52vh;
+  padding-bottom: 32px;
   background-color: rgb(13, 8, 32);
 }
 
@@ -47,4 +48,36 @@
 .button:hover {
   background-color: rgb(219, 216, 231);
   color: rgb(13, 8, 32);
+}
+
+/* ANCHOR Feature Section *****************************************************/
+
+.container.paddingTop {
+  padding-top: 72px;
+}
+
+.container.paddingBottom {
+  padding-bottom: 48px;
+}
+
+.gridBlock .threeByGridBlock {
+  margin-bottom: 72px;
+}
+
+.container .wrapper .alignCenter h2 {
+  margin-bottom: 0.5em;
+}
+
+.container .wrapper .alignCenter p {
+  margin-bottom: 0;
+}
+
+.imageAlignTop.alignCenter .blockImage {
+  height: 144px;
+  max-width: 100%;
+}
+
+.gridBlock .threeByGridBlock img {
+  height: 144px;
+  width: auto;
 }

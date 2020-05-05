@@ -69,19 +69,37 @@ class Index extends React.Component {
 
     // ANCHOR Features Section
     const Features = () => (
-      <Block layout="fourColumn" align="center">
+      <Block layout="threeColumn" align="center">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${siteConfig.baseUrl}img/undraw_react.svg`,
+            content: 'What you will use are tried and tested.',
+            image: `${siteConfig.baseUrl}img/undraw_reliable.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Reliable',
           },
           {
-            content: 'The content of my second feature',
-            image: `${siteConfig.baseUrl}img/undraw_operating_system.svg`,
+            content: 'Performs fast, which ensures lag-free content.',
+            image: `${siteConfig.baseUrl}img/undraw_fast.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Fast',
+          },
+          {
+            content: 'Choose what you need, no more, no less.',
+            image: `${siteConfig.baseUrl}img/undraw_modular.svg`,
+            imageAlign: 'top',
+            title: 'Modular',
+          },
+          {
+            content: 'Built with typescript, ensures predictable operations.',
+            image: `${siteConfig.baseUrl}img/undraw_typed.svg`,
+            imageAlign: 'top',
+            title: 'Typed',
+          },
+          {
+            content: 'Functions are documented and viewable [**here**](/docs/math/sum) or in your IDE (JSDoc)',
+            image: `${siteConfig.baseUrl}img/undraw_docs.svg`,
+            imageAlign: 'top',
+            title: 'Docs',
           },
         ]}
       </Block>
