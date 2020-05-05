@@ -1,40 +1,41 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
+// ANCHOR React
 const React = require('react');
 
+// ANCHOR Comp Library
 const CompLibrary = require('../../core/CompLibrary.js');
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+// ANCHOR Home Page Container
+const SplashContainer = props => (
+  <div className="homeContainer">
+    <div className="homeSplashFade">
+      <div className="wrapper homeWrapper">{props.children}</div>
+    </div>
+  </div>
+);
+
+
+// ANCHOR Section Container
+const Block = props => (
+  <Container
+    padding={['bottom', 'top']}
+    id={props.id}
+    background={props.background}>
+    <GridBlock
+      align={props.align}
+      contents={props.children}
+      layout={props.layout}
+    />
+  </Container>
+);
+
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    const {siteConfig} = this.props;
 
-    const SplashContainer = props => (
-      <div className="homeContainer">
-        <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
-        </div>
-      </div>
-    );
-
-    const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
-
+    // ANCHOR Home Page Title
     const ProjectTitle = props => (
       <h2 className="projectTitle">
         {props.title}
@@ -42,14 +43,7 @@ class HomeSplash extends React.Component {
       </h2>
     );
 
-    const PromoSection = props => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
-    );
-
+    // ANCHOR Home Page Button
     const Button = props => (
       <div className="pluginWrapper buttonWrapper">
         <a className="button" href={props.href} target={props.target}>
@@ -60,14 +54,9 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
-          </PromoSection>
+          <Button href="/docs/getting-started/installation">Try It Out</Button>
         </div>
       </SplashContainer>
     );
@@ -76,89 +65,71 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const {config: siteConfig} = this.props;
 
-    const Block = props => (
-      <Container
-        padding={['bottom', 'top']}
-        id={props.id}
-        background={props.background}>
-        <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
-        />
-      </Container>
-    );
-
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
-            imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-            imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
-          },
-        ]}
-      </Block>
-    );
-
+    // ANCHOR Features Section
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block layout="threeColumn" align="center">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'What you will use are tried and tested.',
+            image: `${siteConfig.baseUrl}img/undraw_reliable.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Reliable',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Performs fast, which ensures lag-free content.',
+            image: `${siteConfig.baseUrl}img/undraw_fast.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Fast',
+          },
+          {
+            content: 'Choose what you need, no more, no less.',
+            image: `${siteConfig.baseUrl}img/undraw_modular.svg`,
+            imageAlign: 'top',
+            title: 'Modular',
+          },
+          {
+            content: 'Built with typescript, ensures predictable operations.',
+            image: `${siteConfig.baseUrl}img/undraw_typed.svg`,
+            imageAlign: 'top',
+            title: 'Typed',
+          },
+          {
+            content: 'Functions are documented and viewable [**here**](/docs/math/sum) or in your IDE (JSDoc)',
+            image: `${siteConfig.baseUrl}img/undraw_docs.svg`,
+            imageAlign: 'top',
+            title: 'Docs',
+          },
+        ]}
+      </Block>
+    );
+
+    // ANCHOR Tree Shake Section
+    const TreeShake = () => (
+      <Block background="highlight" align="left">
+        {[
+          {
+            content:
+              'Calculate supports dead code elimination (**tree shaking**) or in simpler terms, it removes unused code.',
+            image: `${siteConfig.baseUrl}img/undraw_treeshake.svg`,
+            imageAlign: 'left',
+            title: 'Get what you need.',
+          },
+        ]}
+      </Block>
+    );
+
+    // ANCHOR Module Format Section
+    const ModuleFormat = () => (
+      <Block background="light" align="left">
+        {[
+          {
+            content:
+              'Calculate supports both ESM and CJS module formats, **import** it or **require** it however you want.',
+            image: `${siteConfig.baseUrl}img/undraw_package.svg`,
+            imageAlign: 'right',
+            title: 'Get how you want.',
           },
         ]}
       </Block>
@@ -177,15 +148,13 @@ class Index extends React.Component {
           </a>
         ));
 
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
-
       return (
         <div className="productShowcaseSection paddingBottom">
           <h2>Who is Using This?</h2>
           <p>This project is used by all these people</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
+            <a className="button" href="/">
               More {siteConfig.title} Users
             </a>
           </div>
@@ -195,13 +164,11 @@ class Index extends React.Component {
 
     return (
       <div>
-        <HomeSplash siteConfig={siteConfig} language={language} />
+        <HomeSplash siteConfig={siteConfig}/>
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
+          <TreeShake />
+          <ModuleFormat />
           <Showcase />
         </div>
       </div>

@@ -1,23 +1,105 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
- 
-/* your custom css */
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-}
-
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
 @media only screen and (min-width: 1024px) {
+  .mainContainer .wrapper .post .postHeaderTitle {
+    padding-top: 8px;
+  }
 }
-
 @media only screen and (max-width: 1023px) {
+  .fixedHeaderContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navPusher {
+    padding-top: 116px;
+  }
+
+  .mainContainer .wrapper .post .postHeaderTitle {
+    padding-top: 32px;
+  }
+}
+@media only screen and (min-width: 1400px) {}
+@media only screen and (min-width: 1500px) {}
+
+/* ANCHOR Navbar **************************************************************/
+
+.fixedHeaderContainer a {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 1400px) {
+.navigationSlider .slidingNav ul {
+  background-color: rgb(13, 8, 32);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-@media only screen and (min-width: 1500px) {
+/* ANCHOR Landing Screen  *****************************************************/
+
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52vh;
+  padding-bottom: 32px;
+  background-color: rgb(13, 8, 32);
+}
+
+.projectTitle {
+  color: rgb(219, 216, 231);
+}
+
+.button {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: rgb(13, 8, 32);
+  color: rgb(219, 216, 231);
+  border: 1px solid rgb(219, 216, 231);
+}
+
+.button:hover {
+  background-color: rgb(219, 216, 231);
+  color: rgb(13, 8, 32);
+}
+
+/* ANCHOR Feature Section *****************************************************/
+
+.container.paddingTop {
+  padding-top: 72px;
+}
+
+.container.paddingBottom {
+  padding-bottom: 48px;
+}
+
+.gridBlock .threeByGridBlock {
+  margin-bottom: 72px;
+}
+
+.container .wrapper .alignCenter h2 {
+  margin-bottom: 0.5em;
+}
+
+.container .wrapper .alignCenter p {
+  margin-bottom: 0;
+}
+
+.imageAlignTop.alignCenter .blockImage {
+  height: 144px;
+  max-width: 100%;
+}
+
+.gridBlock .threeByGridBlock img {
+  height: 144px;
+  width: auto;
+}
+
+/* ANCHOR Links ***************************************************************/
+
+.mainContainer .wrapper a {
+  color: rgb(132, 125, 163);
+}
+
+.mainContainer .wrapper .docs-prevnext a {
+  color: rgb(219, 216, 231);
 }
