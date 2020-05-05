@@ -1,7 +1,8 @@
 {
   "docs": {
     "Getting Started": [
-      "getting-started/installation"
+      "getting-started/installation",
+      "getting-started/update"
     ],
     "Math": [
       "math/sum",
