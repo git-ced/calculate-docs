@@ -8,11 +8,11 @@ const users = [];
 const siteConfig = {
   title: 'Calculate',
   tagline: 'Fast, lightweight, extensible.',
-  url: '#', // TODO Add real url
-  baseUrl: '/',
-  projectName: 'calculate',
+  url: 'https://git-ced.github.io',
+  baseUrl: '/calculate-docs/',
+  projectName: 'calculate-docs',
   organizationName: 'git-ced',
-  headerLinks: [ // TODO Add real links
+  headerLinks: [
     { doc: 'getting-started/installation', label: 'Docs' },
     { page: 'help', label: 'Help' },
     { blog: true, label: 'Blog' },
