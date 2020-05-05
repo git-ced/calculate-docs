@@ -93,3 +93,13 @@
   height: 144px;
   width: auto;
 }
+
+/* ANCHOR Links ***************************************************************/
+
+.mainContainer .wrapper a {
+  color: rgb(132, 125, 163);
+}
+
+.mainContainer .wrapper .docs-prevnext a {
+  color: rgb(219, 216, 231);
+}
