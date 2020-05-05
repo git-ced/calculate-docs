@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://git-ced.github.io/calculate-docs/blog</id>
+    <title>Calculate Blog</title>
+    <updated>2020-05-02T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://git-ced.github.io/calculate-docs/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Calculate news and events.</subtitle>
+    <logo>https://git-ced.github.io/calculate-docs/img/calculate-logo-light.svg</logo>
+    <rights>Copyright © 2020 Calculate</rights>
+    <entry>
+        <title type="html"><![CDATA[New Version 1.0.0]]></title>
+        <id>https://git-ced.github.io/calculate-docs/blog/2020/05/02/new-version-1.0.0.html</id>
+        <link href="https://git-ced.github.io/calculate-docs/blog/2020/05/02/new-version-1.0.0.html"/>
+        <updated>2020-05-02T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Basic Arithmetic Functions</strong></p> <ul> <li><code>sum()</code> - Gets the sum of given numbers.</li> <li><code>difference()</code> - Gets the difference of given numbers.</li> <li><code>product()</code> - Gets the product of given numbers.</li> <li><code>quotient()</code> - Gets the quotient of given numbers.</li> <li><code>remainder()</code> - Gets the remainder o...</li></ul>]]></summary>
+        <author>
+            <name>Prince Neil Cedrick Castro</name>
+            <email/>
+            <uri>https://github.com/git-ced</uri>
+        </author>
+    </entry>
+</feed>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Calculate Blog</title>
+        <link>https://git-ced.github.io/calculate-docs/blog</link>
+        <description>The best place to stay up-to-date with the latest Calculate news and events.</description>
+        <lastBuildDate>Sat, 02 May 2020 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Calculate Blog</title>
+            <url>https://git-ced.github.io/calculate-docs/img/calculate-logo-light.svg</url>
+            <link>https://git-ced.github.io/calculate-docs/blog</link>
+        </image>
+        <copyright>Copyright © 2020 Calculate</copyright>
+        <item>
+            <title><![CDATA[New Version 1.0.0]]></title>
+            <link>https://git-ced.github.io/calculate-docs/blog/2020/05/02/new-version-1.0.0.html</link>
+            <guid>https://git-ced.github.io/calculate-docs/blog/2020/05/02/new-version-1.0.0.html</guid>
+            <pubDate>Sat, 02 May 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><strong>Basic Arithmetic Functions</strong></p> <ul> <li><code>sum()</code> - Gets the sum of given numbers.</li> <li><code>difference()</code> - Gets the difference of given numbers.</li> <li><code>product()</code> - Gets the product of given numbers.</li> <li><code>quotient()</code> - Gets the quotient of given numbers.</li> <li><code>remainder()</code> - Gets the remainder o...</li></ul>]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>New Version 1.0.0 · Calculate</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="**Basic Arithmetic Functions**"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="New Version 1.0.0 · Calculate"/><meta property="og:type" content="website"/><meta property="og:url" content="https://git-ced.github.io/calculate-docs/blog/2020/05/02/new-version-1.0.0"/><meta property="og:description" content="**Basic Arithmetic Functions**"/><meta property="og:image" content="https://git-ced.github.io/calculate-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://git-ced.github.io/calculate-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/calculate-docs/img/calculate-logo-light.svg"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css"/><link rel="alternate" type="application/atom+xml" href="https://git-ced.github.io/calculate-docs/blog/atom.xml" title="Calculate Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://git-ced.github.io/calculate-docs/blog/feed.xml" title="Calculate Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/calculate-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/calculate-docs/css/main.css"/><script src="/calculate-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/calculate-docs/"><img class="logo" src="/calculate-docs/img/calculate-logo-light.svg" alt="Calculate"/><h2 class="headerTitleWithLogo">Calculate</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/calculate-docs/docs/getting-started/installation" target="_self">Docs</a></li><li class=""><a href="/calculate-docs/help" target="_self">Help</a></li><li class="siteNavGroupActive"><a href="/calculate-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/calculate-docs/blog/2020/05/02/new-version-1.0.0">New Version 1.0.0</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/calculate-docs/blog/2020/05/02/new-version-1.0.0">New Version 1.0.0</a></h1><p class="post-meta">May 2, 2020</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/git-ced" target="_blank" rel="noreferrer noopener">Prince Neil Cedrick Castro</a></p><div class="authorPhoto"><a href="https://github.com/git-ced" target="_blank" rel="noreferrer noopener"><img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.0-9/58649504_1486528368149285_3526713872855597056_n.jpg?_nc_cat=108&amp;_nc_sid=85a577&amp;_nc_ohc=wfE8FOTzFWwAX_5UXqq&amp;_nc_ht=scontent.fmnl9-1.fna&amp;oh=daf204bb18f33000177d97373618bee3&amp;oe=5ED6B139" alt="Prince Neil Cedrick Castro"/></a></div></div></header><div><span><p><strong>Basic Arithmetic Functions</strong></p>
+<ul>
+<li><code>sum()</code> - Gets the sum of given numbers.</li>
+<li><code>difference()</code> - Gets the difference of given numbers.</li>
+<li><code>product()</code> - Gets the product of given numbers.</li>
+<li><code>quotient()</code> - Gets the quotient of given numbers.</li>
+<li><code>remainder()</code> - Gets the remainder of given numbers.</li>
+</ul>
+<p><strong>Basic Statistical Functions</strong></p>
+<ul>
+<li><code>mean()</code> - Gets the mean of given numbers.</li>
+<li><code>median()</code> - Gets the median of given numbers.</li>
+<li><code>mode()</code> - Gets the mode of given numbers.</li>
+<li><code>range()</code> - Gets the range of given numbers.</li>
+</ul>
+<p><strong>Sorting</strong></p>
+<ul>
+<li><code>sort()</code> - Sorts numbers or strings in ascending order.</li>
+</ul>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/calculate-docs/blog/">Recent Posts</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/calculate-docs/" class="nav-home"><img src="/calculate-docs/img/calculate-logo-light.svg" alt="Calculate" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/math/sum">Guides</a></div><div><h5>Package</h5><a href="https://www.npmjs.com/package/@princedev/calculate">NPM</a><a style="margin-bottom:8px" href="https://github.com/git-ced/calculate">GitHub</a><a class="github-button" href="https://github.com/git-ced/calculate" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div><div><h5>More</h5><a href="/calculate-docs/help">Help</a><a href="/calculate-docs/blog">Blog</a></div></section><section class="copyright">aws.cedi@gmail.com</section><section class="copyright">Copyright © 2020 Calculate</section></footer></div></body></html>
