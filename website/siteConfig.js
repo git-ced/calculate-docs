@@ -23,8 +23,8 @@ const siteConfig = {
   footerIcon: 'img/calculate-logo-light.svg',
   favicon: 'img/calculate-logo-light.svg',
   colors: {
-    primaryColor: '#2F2E41',
-    secondaryColor: '#625E70',
+    primaryColor: '#0D0820',
+    secondaryColor: '#DBD8E7',
   },
   copyright: `Copyright © ${new Date().getFullYear()} Calculate`,
   highlight: {
