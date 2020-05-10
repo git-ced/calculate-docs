@@ -12,18 +12,14 @@
       "math/remainder",
       "math/power",
       "math/square",
-      "math/cube"
+      "math/cube",
+      "math/factorial"
     ],
     "Statistics": [
       "statistics/mean",
       "statistics/median",
       "statistics/mode",
       "statistics/range"
-    ],
-    "Sorting": [
-      "sorting/sort",
-      "sorting/insertion-sort",
-      "sorting/quicksort"
     ]
   }
 }
