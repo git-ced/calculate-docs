@@ -90,7 +90,7 @@ class Index extends React.Component {
             title: 'Modular',
           },
           {
-            content: 'No side effects, and immutable inputs.',
+            content: 'Immutable inputs, no side effects.',
             image: `${siteConfig.baseUrl}img/undraw_typed.svg`,
             imageAlign: 'top',
             title: 'Pure',
