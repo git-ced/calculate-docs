@@ -90,10 +90,10 @@ class Index extends React.Component {
             title: 'Modular',
           },
           {
-            content: 'Built with typescript, ensures predictable operations.',
+            content: 'No side effects, and immutable inputs.',
             image: `${siteConfig.baseUrl}img/undraw_typed.svg`,
             imageAlign: 'top',
-            title: 'Typed',
+            title: 'Pure',
           },
           {
             content: 'Functions are documented and viewable [**here**](/docs/math/sum) or in your IDE (JSDoc)',
